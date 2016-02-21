@@ -14,7 +14,7 @@ from urlfetch import fetch_url
 
 DEFAULT = 'http://s3.amazonaws.com/cuny-is211-spring2015/weblog.csv'
 PARSER = argparse.ArgumentParser()
-PARSER.add_argument('--url', required=False, type=str, default=DEFAULT)
+PARSER.add_argument('--url', required=True, type=str, default=DEFAULT)
 ARGS = PARSER.parse_args()
 if ARGS.url:
     URL = ARGS.url
